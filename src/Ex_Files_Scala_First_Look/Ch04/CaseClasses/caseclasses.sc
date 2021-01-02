@@ -1,6 +1,5 @@
 object caseClasses {
-  println("Welcome to the Scala worksheet")
-
+  // no need for the keyword new.
   case class Money(val amount: Int = 1, val currency: String = "USD") {
     //define a function called '+' to add two money objects
     def +(other: Money): Money = Money(amount + other.amount)
