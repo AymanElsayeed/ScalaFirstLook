@@ -20,6 +20,8 @@ object lists {
 
   var sum = 0
   x1.foreach(sum+=_)
+
+  var colors = List("red", "orange", "blue")
   
 }
 
@@ -37,3 +39,7 @@ lists.x6.foreach(println)
 lists.sum
 
 assert(lists.sum == 21)
+
+for(c<-lists.colors)(println(c))
+
+for(n<-lists.x1)(println(n*2))
