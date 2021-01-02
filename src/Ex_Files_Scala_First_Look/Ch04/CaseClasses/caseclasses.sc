@@ -4,6 +4,7 @@ object caseClasses {
   case class Money(val amount: Int = 1, val currency: String = "USD") {
     //define a function called '+' to add two money objects
     def +(other: Money): Money = Money(amount + other.amount)
+    def -(other: Money): Money = Money(amount - other.amount)
   }
   //creates a money object with 1 USD
   val defaultAmount = Money()
@@ -23,4 +24,6 @@ object caseClasses {
 
   //use the + definition above
   println("add 10 + 15: " + { Money(10, "USD") + Money(15, "USD") })
+  println("add 10 - 15: " + {Money(15, "USD") - Money(10, "USD") })
 }
+caseClasses
