@@ -17,6 +17,9 @@ object lists {
   var x5 = x1 ::: x3
 
   var x6 =  List.concat(x1, x3)
+
+  var sum = 0
+  x1.foreach(sum+=_)
   
 }
 
@@ -24,3 +27,13 @@ lists.x1
 lists.x2
 
 lists.x5
+
+lists.x5 == lists.x6
+
+List.equals(lists.x5, lists.x6)
+
+lists.x6.foreach(println)
+
+lists.sum
+
+assert(lists.sum == 21)
