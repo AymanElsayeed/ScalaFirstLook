@@ -9,7 +9,7 @@ object Calculator {
         println(minus(x,y))
 
     }
-    def addition(a:Int, b:Int) = a + b
+  def addition(a:Int, b:Int) = a + b
 	def quotient(a:Int, b:Int) = if(b == 0) 0 else a / b
 	def times(c:Int, d:Int) = c * d
 	def minus(a:Int, b:Int) = a - b
