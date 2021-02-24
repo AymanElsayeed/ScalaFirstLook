@@ -1,4 +1,4 @@
-object higher{
+object higher {
 
   val double_it = (i:Int) => i*2
 
@@ -6,7 +6,7 @@ object higher{
 
   val results = highOrderFunction(4, double_it)
 
-  println(s"results: ${results}")
+  println(s"results: $results")
 
 }
 
