@@ -21,6 +21,7 @@ object maps{
   groceries.-=("juice")
   println(groceries)
 
+  println(groceries.getOrElse("juice", "not exists"))
 
 
 }
