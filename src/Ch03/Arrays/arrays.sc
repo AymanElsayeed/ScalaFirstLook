@@ -23,11 +23,13 @@ object arrays {
   even.foreach(print)
   println()
 
-//  var numbers = new Array[Any] (3)
-//  numbers(1) = 2
-//  numbers(0) = "one"
-//  numbers(2) = false
-//  numbers.foreach(println)
+  var numbers = new Array[Int] (4)
+  numbers(0) = 0
+  numbers(1) = 1
+  numbers(2) = 2
+  numbers(3) = 3
+  var results = for(num <- numbers if num >0 ) yield num*2
+  results.foreach(println)
 
 
 }
