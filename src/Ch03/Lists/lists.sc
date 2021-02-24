@@ -1,5 +1,7 @@
 object lists {
-  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+
+  // how to creat list
+
   val empty: List[Nothing] = List()
 
   var a = List(3.0, "Hello")
@@ -22,6 +24,10 @@ object lists {
   x1.foreach(sum+=_)
 
   var colors = List("red", "orange", "blue")
+
+  // list of tuples
+  val pairs = List((1,4),(2,3),(0,5))
+  for((a,b)<- pairs) yield a+b
   
 }
 
@@ -40,6 +46,6 @@ lists.sum
 
 assert(lists.sum == 21)
 
-for(c<-lists.colors)(println(c))
+for(c<-lists.colors) println(c)
 
-for(n<-lists.x1)(println(n*2))
+for(n<-lists.x1) println(n*2)
