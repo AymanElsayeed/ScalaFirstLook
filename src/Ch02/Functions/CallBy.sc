@@ -3,13 +3,13 @@ object CallBy {
       println("inside calling something")
       5 // return value
     }
-  def callByValue(x: Int) = {
+  def callByValue(x: Int) : Unit = {
     println("call by value: ")
     println("x1 = " + x)
    println("x2 = " + x)
   }
 
-  def callByName(x: => Int) = {
+  def callByName(x: => Int): Unit = {
     println("call by name: ")
     println("x1 = " + x)
     println("x2 = " + x)
